@@ -52,6 +52,9 @@ if (astronautCount > 7 ){
     preparedForLiftOff = false;
 } else {
     preparedForLiftOff = true;
+}
+
+if(preparedForLiftOff === true){
     console.log();
     console.log("ALL SYSTEMS GO: INITIATING LAUNCH SEQUENCE!");
     console.log("- - - - - - - - - - - - - - - - - - - - - -");
