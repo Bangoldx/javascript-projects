@@ -14,19 +14,12 @@ function findMinValue(arr) {
 let numSorting = function (numArray) {
   let sortedArray = [];
   let interations = numArray.length;
-for(let i = 0; i < interations ; i++){
-  sortedArray.push(findMinValue(numArray));
-  // console.log(numArray.indexOf(findMinValue(numArray)))
-  numArray.splice(numArray.indexOf(findMinValue(numArray)),1)
-
-}
-
-
-  // sortedArray.push(findMinValue(numArray));
-  // numArray.splice(findMinValue(numArray), 1);
+  for (let i = 0; i < interations; i++) {
+    sortedArray.push(findMinValue(numArray));
+    numArray.splice(numArray.indexOf(findMinValue(numArray)), 1)
+  }
   console.log(sortedArray);
   console.log(numArray);
-  
 
   return sortedArray
 }

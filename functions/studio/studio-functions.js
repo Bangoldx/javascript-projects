@@ -54,8 +54,8 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
-for(let i = 0; i < arrayTest3.length; i++){
-    emptyArr.unshift(reverseCharacters(arrayTest3[i]));
+for(let i = 0; i < arrayTest1.length; i++){
+    emptyArr.unshift(reverseCharacters(arrayTest1[i]));
 }
 console.log(emptyArr);
 // Bonus Missions
