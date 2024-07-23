@@ -9,9 +9,9 @@ function crewMass(crew) {
 
 // Code your fuelRequired function here:
 function fuelRequired(crew) {
-  let uncrewedMass = 75000
-  let totalMass = crewMass(crew) + uncrewedMass
-  let fuelNeeded = Math.ceil(totalMass * 9.5)
+  let uncrewedMass = 75000;
+  let totalMass = crewMass(crew) + uncrewedMass;
+  let fuelNeeded = Math.ceil(totalMass * 9.5);
   for (let i = 0; i < crew.length; i++) {
     if (crew[i].species === "dog" || crew[i].species === "cat") {
       fuelNeeded += 200

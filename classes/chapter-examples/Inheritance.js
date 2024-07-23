@@ -12,12 +12,15 @@ class Panthera extends Felidae {
 }
 
 class Tiger extends Panthera {
-	constructor() {
+	constructor(name,age,weight) {
     super();
 		this.hasStripes = "true";
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
 	}
 }
 
-let tigger = new Tiger();
+let tigger = new Tiger("Tigger", 11, 245);
 
 console.log(tigger);
